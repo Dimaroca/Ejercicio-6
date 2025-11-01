@@ -1,0 +1,83 @@
+🌾 Sistema de Gestión de Equipos - Cooperativa Agro-Tecnológica
+📖 Descripción del proyecto
+
+Este programa simula el funcionamiento de una cooperativa agro-tecnológica que administra distintos equipos agrícolas inteligentes, como sensores de suelo, estaciones meteorológicas y drones de riego o monitoreo.
+El sistema permite listar, buscar y ordenar equipos, además de incorporar nuevas funcionalidades mediante interfaces (Medible, Accionable, Registrable) sin necesidad de modificar el código principal.
+
+🧩 Estructura del proyecto
+
+Clases principales:
+
+Main: Clase principal que ejecuta el menú de opciones en consola.
+
+Cooperativa: Controla el catálogo de equipos y sus operaciones (listar, buscar, ordenar).
+
+Equipo: Representa un dispositivo con información básica como ID, nombre y consumo eléctrico.
+
+Interfaces:
+
+Medible: Define el comportamiento de los equipos que pueden realizar mediciones.
+
+Accionable: Define el comportamiento de los equipos que pueden ejecutar acciones.
+
+Registrable: Define el comportamiento de los equipos que pueden registrar o reportar datos.
+
+⚙️ Funcionalidades principales
+
+Cargar un catálogo inicial con al menos 10 equipos de distintos tipos.
+
+Listar todos los equipos mostrando su información.
+
+Buscar un equipo por ID.
+
+Buscar un equipo por nombre.
+
+Ordenar los equipos por consumo eléctrico (de menor a mayor).
+
+Mostrar qué capacidades tiene cada equipo (medir, accionar, registrar).
+
+Permitir agregar nuevos equipos sin modificar el código existente.
+
+🧠 Conceptos aplicados
+
+Programación orientada a objetos (POO).
+
+Uso de interfaces para implementar polimorfismo.
+
+Modularidad y extensibilidad: el sistema puede crecer sin alterar las clases base.
+
+Separación de responsabilidades: la lógica de control está en Cooperativa, la interacción en Main y los datos en Equipo.
+
+🖥️ Ejecución
+
+Compilar todas las clases del proyecto:
+
+javac Main.java Cooperativa.java Equipo.java Medible.java Accionable.java Registrable.java
+
+
+Ejecutar el programa:
+
+java Main
+
+
+Usar el menú para:
+
+Listar los equipos
+
+Buscar por ID o nombre
+
+Ordenar por consumo eléctrico
+
+Salir del sistema
+
+📋 Requisitos funcionales (resumen)
+
+Registrar y almacenar equipos en un catálogo.
+
+Cargar automáticamente los equipos al iniciar el sistema.
+
+Permitir listar, buscar y ordenar equipos.
+
+Mantener el sistema operativo aunque un equipo no implemente todas las capacidades.
+
+Facilitar la incorporación de nuevos equipos sin cambiar el código existente.
