@@ -1,0 +1,3 @@
+interface Accion{
+    void registrar();
+}
